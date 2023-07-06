@@ -1,34 +1,42 @@
 from selenium.webdriver.common.by import By
 
 
-class GlobalLocators:
-    TEXT = (By.ID, "content")
-
-
 class MainPageLocators:
-    BASKET_BUTTON = (By.CSS_SELECTOR, "#header-cart > div > button")
-    SEARCH_FIELD = (By.CSS_SELECTOR, "#search > input")
+    TEXT = (By.CSS_SELECTOR, "#content > h3")
+    BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-inverse")
+    SEARCH_FIELD = (By.CSS_SELECTOR, ".form-control")
     FOOTER_LINK = (By.CSS_SELECTOR, "body > footer > div > p > a")
 
 
 class CatalogPageLocators:
-    WISH_LIST_BUTTON = (By.CSS_SELECTOR, "div:nth-child(1) form div.button-group button:nth-child(2)")
-    HOME_ICON = (By.CSS_SELECTOR, "#product-category > ul > li:nth-child(1) > a > i")
-    CURRENCY_BUTTON = (By.CSS_SELECTOR, "#form-currency > div > a > span")
+    TEXT = (By.CSS_SELECTOR, "#content > h2")
+    WISH_LIST_BUTTON = (By.CSS_SELECTOR, ".product-layout:nth-child(1) .fa-heart")
+    HOME_ICON = (By.CSS_SELECTOR, ".fa-home")
+    CURRENCY_BUTTON = (By.CSS_SELECTOR, "#form-currency .dropdown-toggle")
 
 
 class ProductPageLocators:
-    PRODUCT_IMAGE = (By.CSS_SELECTOR, "#content > div.row.mb-3 > div:nth-child(1) > div img.mb-3")
+    TEXT = (By.CSS_SELECTOR, "#content h1")
+    PRODUCT_IMAGE = (By.CSS_SELECTOR, "li:nth-child(1) .thumbnail img")
     BUTTON_CART = (By.ID, "button-cart")
-    COMPANY_LOGO = (By.CSS_SELECTOR, "#logo > a > img")
+    COMPANY_LOGO = (By.CSS_SELECTOR, ".img-responsive")
+
 
 class LoginPageLocators:
+    TEXT = (By.CSS_SELECTOR, "#content .col-sm-6:nth-child(1) h2")
     EMAIL_FIELD = (By.CSS_SELECTOR, "#input-email")
-    LOGIN_BUTTON = (By.CSS_SELECTOR, "#form-login > button")
-    CONTINUE_BUTTON = (By.CSS_SELECTOR, "#content > div > div:nth-child(1) .btn")
+    LOGIN_BUTTON = (By.CSS_SELECTOR, ".col-sm-6:nth-child(2) .btn")
+    CONTINUE_BUTTON = (By.CSS_SELECTOR, ".col-sm-6:nth-child(1) .btn")
 
 
 class RegistrationPageLocators:
+    TEXT = (By.CSS_SELECTOR, "#content > h1")
     LOGIN_LINK = (By.CSS_SELECTOR, "#content > p > a")
     FIRST_NAME = (By.CSS_SELECTOR, "#input-firstname")
-    NEWS_TUMBLER = (By.CSS_SELECTOR, "#input-newsletter")
+    BUTTON = (By.CSS_SELECTOR, ".btn-primary")
+
+
+class AdminPageLocators:
+    USERNAME = (By.CSS_SELECTOR, "#input-username")
+    PASSWORD = (By.CSS_SELECTOR, "input-password")
+    LOGIN_BUTTON = (By.CSS_SELECTOR, "button.btn-primary")

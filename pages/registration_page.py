@@ -9,4 +9,11 @@ class RegistrationPage(BasePage):
 
     def reg_fields_is_clickable(self):
         self.text_field_is_clickable(RegistrationPageLocators.FIRST_NAME)
-        self.text_field_is_clickable(RegistrationPageLocators.NEWS_TUMBLER)
+
+    def check_text_on_registration_page(self):
+        self.check_text(RegistrationPageLocators.TEXT, "Register Account")
+
+    def push_continue_button(self):
+        self.push_the_button(RegistrationPageLocators.BUTTON)
+
+

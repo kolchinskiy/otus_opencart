@@ -7,3 +7,8 @@ class CatalogPage(BasePage):
         self.check_element(CatalogPageLocators.WISH_LIST_BUTTON)
         self.check_element(CatalogPageLocators.HOME_ICON)
         self.check_element(CatalogPageLocators.CURRENCY_BUTTON)
+
+    def check_text_on_catalog_page(self):
+        self.check_text(CatalogPageLocators.TEXT, "Desktops")
+
+
