@@ -1,5 +1,5 @@
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as EC, expected_conditions
 
 
 class BasePage:
@@ -30,3 +30,13 @@ class BasePage:
     def push_the_button(self, locator):
         button = self.browser.find_element(*locator)
         button.click()
+
+    def click(self, locator):
+        wait = WebDriverWait(self.browser, 3)
+        item = wait.until(EC.element_to_be_clickable(locator))
+        item.click()
+
+    def accept_alert(self):
+        wait = WebDriverWait(self.browser, 3)
+        alert = wait.until(expected_conditions.alert_is_present())
+        alert.accept()
