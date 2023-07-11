@@ -13,5 +13,3 @@ class ProductPage(BasePage):
 
     def check_text_on_product_page(self):
         self.check_text(ProductPageLocators.TEXT, "Palm")
-
-

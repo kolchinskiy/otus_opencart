@@ -13,4 +13,3 @@ class LoginPage(BasePage):
 
     def check_text_on_login_page(self):
         self.check_text(LoginPageLocators.TEXT, "New Customer")
-

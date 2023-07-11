@@ -10,5 +10,3 @@ class CatalogPage(BasePage):
 
     def check_text_on_catalog_page(self):
         self.check_text(CatalogPageLocators.TEXT, "Desktops")
-
-
