@@ -10,7 +10,7 @@ class GlobalLocators:
 
 
 class MainPageLocators:
-    TEXT = (By.CSS_SELECTOR, "#content > h3")
+    TEXT = (By.CSS_SELECTOR, "div:nth-child(1) > h5")
     BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-inverse")
     SEARCH_FIELD = (By.CSS_SELECTOR, ".form-control")
     FOOTER_LINK = (By.CSS_SELECTOR, "body > footer > div > p > a")
