@@ -9,12 +9,12 @@ from selenium.webdriver import FirefoxOptions, ChromeOptions
 
 
 def pytest_addoption(parser):
-    parser.addoption("--executor", action="store", default="192.168.1.104")
+    parser.addoption("--executor", action="store", default="192.168.1.101")
     parser.addoption("--port", action="store", default="8081")
     parser.addoption("--browser", default="chrome")
     parser.addoption("--log_level", action="store", default="DEBUG")
     parser.addoption("--vnc", action="store_true")
-    parser.addoption("--bv")
+    parser.addoption("--bv", default="113.0.5672.63")
     parser.addoption("--video", action="store_true")
     parser.addoption("--mobile", action="store_true")
     parser.addoption("--logs", action="store_true")
