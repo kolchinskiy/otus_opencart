@@ -9,4 +9,4 @@ class MainPage(BasePage):
         self.check_element(MainPageLocators.FOOTER_LINK)
 
     def check_text_on_main_page(self):
-        self.check_text(MainPageLocators.TEXT, "Featured")
+        self.check_text(MainPageLocators.TEXT, "Information")
