@@ -1,0 +1,70 @@
+INFO ===> Test otus_opencart started at 2023-09-24 23:38:39.041809
+INFO ===> Test otus_opencart started at 2023-09-25 00:34:10.772104
+INFO ===> Test otus_opencart started at 2023-09-25 00:35:28.727453
+INFO ===> Test otus_opencart started at 2023-09-25 00:39:23.665518
+INFO ===> Test otus_opencart started at 2023-09-25 00:43:32.374991
+INFO ===> Test otus_opencart started at 2023-09-25 00:46:58.303551
+INFO ===> Test otus_opencart started at 2023-09-25 00:48:37.889848
+INFO ===> Test otus_opencart started at 2023-09-25 00:50:16.127249
+INFO Browser <function browser at 0x000001A8B65D7D80> started
+INFO MainPage: Check title "Your Store"
+INFO MainPage: Check text "Information" in ('css selector', 'div:nth-child(1) > h5')
+INFO MainPage: Check element ('css selector', '.btn-inverse')
+INFO MainPage: Check element ('css selector', '.form-control')
+INFO MainPage: Check element ('css selector', 'body > footer > div > p > a')
+INFO CatalogPage: Check title "Desktops"
+INFO CatalogPage: Check text "Desktops" in ('css selector', '#content > h2')
+INFO CatalogPage: Check element ('css selector', '.product-layout:nth-child(1) .fa-heart')
+INFO CatalogPage: Check element ('css selector', '.fa-home')
+INFO CatalogPage: Check element ('css selector', '#form-currency .dropdown-toggle')
+INFO ProductPage: Check title "Palm Treo Pro"
+INFO ProductPage: Check text "Palm" in ('css selector', '#content h1')
+INFO ProductPage: Check element ('css selector', 'li:nth-child(1) .thumbnail img')
+INFO ProductPage: Check element ('css selector', '.img-responsive')
+INFO ProductPage: Check element ('id', 'button-cart')
+INFO LoginPage: Check title "Account Login"
+INFO LoginPage: Check text "New Customer" in ('css selector', '#content .col-sm-6:nth-child(1) h2')
+INFO LoginPage: Check element ('css selector', '#input-email')
+INFO LoginPage: Check element ('css selector', '.col-sm-6:nth-child(2) .btn')
+INFO LoginPage: Check element ('css selector', '.col-sm-6:nth-child(1) .btn')
+INFO RegistrationPage: Check title "Register Account"
+INFO RegistrationPage: Check text "Register Account" in ('css selector', '#content > h1')
+INFO RegistrationPage: Check element ('css selector', '#content > p > a')
+INFO RegistrationPage: Check that element ('css selector', '#input-firstname') is clickable
+INFO RegistrationPage: Clicking element: ('css selector', 'input[type=checkbox]:nth-child(2)')
+INFO AdminPage: Input "user" in input ('css selector', '#input-username')
+INFO AdminPage: Input "bitnami" in input ('css selector', '#input-password')
+INFO AdminPage: Push the button ('css selector', 'button.btn-primary')
+INFO AdminPage: Clicking element: ('css selector', '.fa-tags')
+INFO AdminPage: Clicking element: ('css selector', '#collapse1 > li:nth-child(2) > a')
+INFO AdminPage: Clicking element: ('css selector', '.fa-plus')
+INFO AdminPage: Input "Название продукта" in input ('css selector', '#input-name1')
+INFO AdminPage: Input "Какая-то мета" in input ('css selector', '#input-meta-title1')
+INFO AdminPage: Clicking element: ('css selector', '#form-product > ul > li:nth-child(2)')
+INFO AdminPage: Input "Какая-то модель" in input ('css selector', '#input-model')
+INFO AdminPage: Clicking element: ('css selector', 'div.page-header button')
+INFO AdminPage: Check element ('css selector', '.alert-success')
+INFO AdminPage: Input "user" in input ('css selector', '#input-username')
+INFO AdminPage: Input "bitnami" in input ('css selector', '#input-password')
+INFO AdminPage: Push the button ('css selector', 'button.btn-primary')
+INFO AdminPage: Clicking element: ('css selector', '.fa-tags')
+INFO AdminPage: Clicking element: ('css selector', '#collapse1 > li:nth-child(2) > a')
+INFO AdminPage: Clicking element: ('css selector', 'tbody tr:nth-child(1) > td:nth-child(1) > input')
+INFO AdminPage: Clicking element: ('css selector', '.fa-trash-o')
+INFO Accept current alert
+INFO AdminPage: Check element ('css selector', '.alert-success')
+INFO RegistrationPage: Input "Имя" in input ('css selector', '#input-firstname')
+INFO RegistrationPage: Input "Фамилия" in input ('css selector', '#input-lastname')
+INFO RegistrationPage: Input "smithshannon@example.net" in input ('css selector', '#input-email')
+INFO RegistrationPage: Input "1234567890" in input ('css selector', '#input-telephone')
+INFO RegistrationPage: Input "qwerty1234567" in input ('css selector', '#input-password')
+INFO RegistrationPage: Input "qwerty1234567" in input ('css selector', '#input-confirm')
+INFO RegistrationPage: Clicking element: ('css selector', 'input[type=checkbox]:nth-child(2)')
+INFO RegistrationPage: Push the button ('css selector', '.btn-primary')
+INFO RegistrationPage: Check text "Your Account Has Been Created!" in ('css selector', '#content > h1')
+INFO CurrencyElement: Clicking element: ('css selector', '#form-currency .dropdown-toggle')
+INFO CurrencyElement: Clicking element: ('css selector', '#form-currency li:nth-child(1)')
+INFO CurrencyElement: Check text "€" in ('css selector', '#form-currency strong')
+INFO CurrencyElement: Clicking element: ('css selector', '#form-currency .dropdown-toggle')
+INFO CurrencyElement: Clicking element: ('css selector', '#form-currency li:nth-child(3)')
+INFO CurrencyElement: Check text "$" in ('css selector', '#form-currency strong')
