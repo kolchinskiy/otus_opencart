@@ -54,7 +54,7 @@ def browser(request):
         raise pytest.UsageError("--browser_name should be chrome or firefox")
 
     if not local:
-        executor_url = f"http://{executor}:4444/wd/hub"
+        executor_url = f"http://host.docker.internal:4444/wd/hub"
 
         caps = {
             "browserName": browser_name,
