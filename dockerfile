@@ -17,5 +17,3 @@ ENV TEST_HOST=http://host.docker.internal:8081
 
 # Запускаем тест
 CMD ["python", "index.py"]
-
-RUN allure serve allure-results
