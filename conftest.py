@@ -53,8 +53,8 @@ def browser(request):
     else:
         raise pytest.UsageError("--browser_name should be chrome or firefox")
 
-    if not local:
-        executor_url = f"http://host.docker.internal:4444/wd/hub"
+    if True: #not local:
+        executor_url = f"{executor}:4444/wd/hub"
 
         caps = {
             "browserName": browser_name,
@@ -64,7 +64,7 @@ def browser(request):
                 "name": os.getenv("BUILD_NUMBER", str(random.randint(9000, 10000))),
                 "screenResolution": "1280x2000",
                 "enableVideo": video,
-                "enableLog": False,
+                "enableLog": True,
                 "timeZone": "Europe/Moscow",
                 "env": ["LANG=ru_RU.UTF-8", "LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8"]
             },
