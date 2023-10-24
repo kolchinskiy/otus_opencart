@@ -65,7 +65,7 @@ def browser(request):
                 "screenResolution": "1280x2000",
                 "enableVideo": video,
                 "enableLog": True,
-                "timeZone": "Europe/Moscow",
+                "timeZone": "Asia/Yerevan",
                 "env": ["LANG=ru_RU.UTF-8", "LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8"]
             },
             "acceptInsecureCerts": True,
