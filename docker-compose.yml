@@ -25,16 +25,11 @@ services:
       - '8081:8080'
       - '443:8443'
     environment:
-      - OPENCART_HOST=opencart
-      - APACHE_HTTP_PORT_NUMBER=8080
-      - OPENCART_EXTERNAL_HTTP_PORT_NUMBER=8080
+      - OPENCART_HOST=192.168.1.101:8081
       - OPENCART_DATABASE_HOST=mariadb
       - OPENCART_DATABASE_PORT_NUMBER=3306
       - OPENCART_DATABASE_USER=bn_opencart
       - OPENCART_DATABASE_NAME=bitnami_opencart
-      # Password for user@default.com (login 'user') administrator account
-      - OPENCART_PASSWORD=qwerty!123
-      # ALLOW_EMPTY_PASSWORD is recommended only for development.
       - ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - 'opencart_data:/bitnami/opencart'

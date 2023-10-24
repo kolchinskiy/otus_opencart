@@ -53,7 +53,7 @@ def browser(request):
     else:
         raise pytest.UsageError("--browser_name should be chrome or firefox")
 
-    if True: #not local:
+    if not local:
         executor_url = f"{executor}:4444/wd/hub"
 
         caps = {
