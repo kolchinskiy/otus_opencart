@@ -1,13 +1,13 @@
-version: '2'
+version: '3'
 services:
   phpadmin:
-    image: 'phpmyadmin/phpmyadmin:5.1.1'
+    image: 'phpmyadmin/phpmyadmin:latest'
     environment:
       - PMA_HOST=mariadb
       - PMA_PORT=3306
       - PMA_USER=bn_opencart
     ports:
-      - '8091:80'
+      - '8888:80'
   mariadb:
     image: docker.io/bitnami/mariadb:10.3
     ports:
@@ -22,12 +22,12 @@ services:
   opencart:
     image: docker.io/bitnami/opencart:3
     ports:
-      - '8090:8090'
+      - '8081:8080'
       - '443:8443'
     environment:
       - OPENCART_HOST=opencart
-      - APACHE_HTTP_PORT_NUMBER=8090
-      - OPENCART_EXTERNAL_HTTP_PORT_NUMBER=8090
+      - APACHE_HTTP_PORT_NUMBER=8080
+      - OPENCART_EXTERNAL_HTTP_PORT_NUMBER=8080
       - OPENCART_DATABASE_HOST=mariadb
       - OPENCART_DATABASE_PORT_NUMBER=3306
       - OPENCART_DATABASE_USER=bn_opencart
