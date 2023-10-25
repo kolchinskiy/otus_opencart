@@ -1,4 +1,6 @@
 import allure
+import pytest
+import requests
 
 from pages.admin_page import AdminPage
 from pages.catalog_page import CatalogPage
@@ -89,3 +91,32 @@ def test_check_currency(base_url, browser):
     page = CurrencyElement(browser)
     page.open(base_url)
     page.check_currency()
+
+
+def test_status_code_200(base_url):
+    """1. Проверяем, открывается ли сайт"""
+    res = requests.get(base_url)
+    assert res.status_code == 200
+
+
+def test_status_code_404(base_url):
+    """2. Проверяем, что невалидный адрес возвращает ошибку"""
+    res = requests.get(base_url + "/qwerty")
+    assert res.status_code == 404
+
+
+@pytest.mark.parametrize("tab_name", [
+    'desktops',
+    'laptop-notebook',
+    'component',
+    'tablet',
+    'software',
+    'smartphone',
+    'camera',
+    'mp3-players'
+])
+def test_tabs(base_url, tab_name):
+    """3-10. Проверяем доступность всех вкладок из шапки"""
+    res = requests.get(base_url + "/" + tab_name)
+    assert res.status_code == 200
+
