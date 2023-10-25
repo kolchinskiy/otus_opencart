@@ -5,6 +5,7 @@ FROM python:3.11
 RUN pip install allure-pytest
 RUN pip install selenium
 RUN pip install faker
+RUN pip install requests
 
 # Копируем все файлы из текущего каталога в контейнер
 COPY . /app
