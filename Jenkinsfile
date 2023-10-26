@@ -45,5 +45,17 @@ pipeline {
                 archiveArtifacts artifacts: 'allure-results/*', allowEmptyArchive: true
             }
         }
+
+        stage('Publish Allure Reports') {
+            steps {
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    results: [[path: 'allure-results']],
+                    reportBuildPolicy: 'ALWAYS',
+                    report: 'allure-report'
+                ])
+            }
+        }
     }
 }
