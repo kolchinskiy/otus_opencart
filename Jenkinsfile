@@ -6,7 +6,7 @@ pipeline {
                 axes {
                     axis {
                         name 'THREAD'
-                        values "${params.THREADS}"
+                        values "${params.NUMBER_OF_THREADS}"
                     }
                 }
                 stages {
