@@ -14,7 +14,7 @@ COPY . /app
 WORKDIR /app
 
 # Указываем переменную окружения для host
-ENV TEST_HOST=http://host.docker.internal:8086
+ENV TWEST_HOST=http://host.docker.internal:8086
 
 # Запускаем тест
 CMD ["python", "index.py"]
