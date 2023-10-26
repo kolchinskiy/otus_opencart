@@ -6,8 +6,8 @@ pipeline {
         string(name: 'LOCAL_IP', defaultValue: '192.168.1.101', description: '')
         string(name: 'OPENCART_PORT', defaultValue: '8081', description: '')
         string(name: 'EXECUTOR', defaultValue: '192.168.1.101', description: '')
-        string(name: 'BROWSER', choices: ['chrome', 'firefox'], description: '')
-        string(name: 'BV', choices: ['117.0', '118.0'], description: 'Browser version')
+        choice(name: 'BROWSER', choices: ['chrome', 'firefox'], description: '')
+        choice(name: 'BV', choices: ['117.0', '118.0'], description: 'Browser version')
     }
 
     stages {
