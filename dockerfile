@@ -13,8 +13,5 @@ COPY . /app
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Указываем переменную окружения для host
-ENV TWEST_HOST=http://host.docker.internal:8086
-
 # Запускаем тест
 CMD ["python", "index.py"]
