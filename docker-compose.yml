@@ -22,7 +22,7 @@ services:
   opencart:
     image: docker.io/bitnami/opencart:3
     ports:
-      - '8081:8080'
+      - '${OPENCART_PORT}:8080'
       - '443:8443'
     environment:
       - OPENCART_HOST=${LOCAL_IP}:${OPENCART_PORT}
