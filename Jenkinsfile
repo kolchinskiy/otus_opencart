@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     parameters {
-        choice(name: 'NUMBER_OF_THREADS', choices: ['2', '4', '6'], description: 'Выберите количество потоков')
-        string(name: 'LOCAL_IP', defaultValue: '192.168.1.101', description: 'Адрес приложения')
-        string(name: 'OPENCART_PORT', defaultValue: '8081', description: 'Порт')
+        choice(name: 'NUMBER_OF_THREADS', choices: ['2', '4', '6'], description: '')
+        string(name: 'LOCAL_IP', defaultValue: '192.168.1.101', description: '')
+        string(name: 'OPENCART_PORT', defaultValue: '8081', description: '')
         string(name: 'EXECUTOR', defaultValue: '192.168.1.101', description: '')
         choice(name: 'BROWSER', choices: ['chrome', 'firefox'], description: '')
-        choice(name: 'BV', choices: ['117.0', '118.0'], description: 'Версия браузера')
+        choice(name: 'BV', choices: ['117.0', '118.0'], description: '')
     }
 
     stages {
